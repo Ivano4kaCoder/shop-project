@@ -46,7 +46,7 @@ body {
     display: flex;
 }
 
-.menu li {
+.menu>li {
     width: 25%;
     border-left: 1px solid #2c71b8;
 }
@@ -68,4 +68,28 @@ body {
 .menu a:hover {
     background-color: #2c71b8;
     color: white;
+}
+
+.submenu {
+    position: absolute;
+    width: 285px;
+    background-color: #2c71b8;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.submenu a {
+    display: block;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    text-align: left;
+    line-height: 40px;
+    font-size: 21px;
+    padding-left: 28px;
+}
+
+.submenu a:hover {
+    background-color: white;
+    color: #2c71b8;
 }
