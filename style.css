@@ -34,9 +34,19 @@ body {
   flex: 0 0 25%;
 }
 
+.col-4 {
+  max-width: 33%;
+  flex: 0 0 33%;
+}
+
 .col-6 {
   max-width: 50%;
   flex: 0 0 50%;
+}
+
+.col-8 {
+  max-width: 66%;
+  flex: 0 0 66%;
 }
 
 .col-9 {
@@ -184,4 +194,100 @@ h3 {
   font-weight: bold;
   text-transform: uppercase;
   margin: 15px 10px 0px 10px;
+}
+
+h2 {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.breadcrumbs {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.breadcrumbs li {
+  float: left;
+}
+
+.breadcrumbs > ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.breadcrumbs li:last-child {
+  text-decoration: underline;
+}
+
+.breadcrumbs a {
+  display: block;
+  text-align: left;
+  color: #96b8dc;
+  text-decoration: none;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.product-sort {
+  width: 268px;
+  border: 1px solid white;
+  background-color: #2c71b8;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.product-sort a {
+  display: block;
+  height: 40px;
+  text-align: left;
+  line-height: 40px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+}
+
+.product-sort a:hover {
+  background-color: white;
+  color: #2c71b8;
+}
+
+.product-sort-list {
+  display: none;
+  position: absolute;
+  border: 1px solid white;
+  background-color: #2c71b8;
+  width: 268px;
+  left: -1px;
+  z-index: 2;
+}
+
+.product-sort-list li > a:hover {
+  background-color: white;
+  color: #2c71b8;
+}
+
+.product-sort li:hover .product-sort-list {
+  display: block;
+}
+
+.sort_by_price:after {
+  content: "";
+  background-image: url(images/arrow_down_icon.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-position: 4px;
+  top: 12px;
+  left: 230px;
 }
