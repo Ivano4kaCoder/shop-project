@@ -291,3 +291,58 @@ h1 {
   top: 12px;
   left: 230px;
 }
+
+.search {
+  position: relative;
+  height: 40px;
+  margin-top: 5px;
+}
+
+input {
+  height: 40px;
+  border: 1px solid #2c71b8;
+  padding: 4px 36px 4px 18px;
+  width: 100%;
+  font-size: 21px;
+  outline: none;
+  color: #2c71b8;
+}
+
+::placeholder {
+  color: #2c71b8;
+  font-size: 21px;
+}
+
+.search-button {
+  background-color: #2c71b8;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  border: none;
+}
+
+.cart {
+  background-color: white;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.product-count {
+  background-color: #2c71b8;
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  top: -10px;
+  left: -6px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
+}
