@@ -21,8 +21,7 @@ addToCardBtns.forEach((btn) => {
 
 //like products
 let likeBtns = document.querySelectorAll(".like");
-console.log(likeBtns);
-let isLiked = false;
+//console.log(likeBtns);
 
 likeBtns.forEach((item) => {
   item.addEventListener("click", function () {
@@ -31,7 +30,8 @@ likeBtns.forEach((item) => {
 });
 
 //2 way
-/*const likeClick = () => {
+/*let isLiked = false;
+const likeClick = () => {
   if (!isLiked) {
     buttonLike.classList.add("isLiked");
     isLiked = !isLiked;
@@ -39,7 +39,30 @@ likeBtns.forEach((item) => {
     buttonLike.classList.remove("isLiked");
     isLiked = !isLiked;
   }
-};*/
+};
+//Event Listeners
+buttonLike.addEventListener("click", likeClick);
+*/
 
-// Event Listeners
-//buttonLike.addEventListener("click", likeClick);
+//more details
+let moreDetailsBtns = document.querySelectorAll(".btn-more-details");
+//console.log(moreDetailsBtns);
+let modal = document.querySelector(".modal");
+//console.log(modal);
+let closeBtn = document.querySelector(".btn-close");
+//console.log(closeBtn);
+
+moreDetailsBtns.forEach((item) => {
+  item.addEventListener("click", openModal);
+});
+closeBtn.addEventListener("click", closeModal);
+
+function openModal() {
+  modal.classList.add("show");
+  modal.classList.remove("hide");
+}
+
+function closeModal() {
+  modal.classList.add("hide");
+  modal.classList.remove("show");
+}
