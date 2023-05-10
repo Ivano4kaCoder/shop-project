@@ -19,6 +19,8 @@ body {
   height: 400px;
   background-color: #235a93;
   opacity: 75%;
+  display: flex;
+  align-items: center;
 }
 
 .row {
@@ -511,4 +513,64 @@ input {
 }
 .hide {
   display: none;
+}
+
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+  z-index: 100;
+}
+
+.slick-dots li {
+  margin: 0 20px;
+}
+.slick-dots li.slick-active button:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid white;
+  background-color: white;
+}
+
+.slick-dots li button:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border: 1px solid white;
+}
+
+.slick-dots li button {
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+}
+
+.slider > div {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  padding: 150px 0;
+}
+
+.slick-prev::before {
+  content: "";
+  background-image: url(images/arrow_left.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+}
+
+.slick-next::before {
+  content: "";
+  background-image: url(images/arrow_right.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 0px;
 }

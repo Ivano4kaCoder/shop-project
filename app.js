@@ -66,3 +66,18 @@ function closeModal() {
   modal.classList.add("hide");
   modal.classList.remove("show");
 }
+
+modal.addEventListener("click", function (e) {
+  if (e.target === modal) {
+    closeModal();
+  }
+});
+
+modal.addEventListener("keydown", function (e) {
+  if (e.code === "Escape") {
+    closeModal();
+  }
+});
+
+//slick
+$(".slider").slick({ dots: true });
